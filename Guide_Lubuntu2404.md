@@ -1,6 +1,7 @@
 # Guide for Lubuntu Install
 License: CC0-1.0 https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt  
-Version: 24.04.00
+Repository: https://github.com/LarsRockstroh/SwGuides/  
+Version: 24.04.01
 ## Startup
 * Limit CPU Speed  
     `for x in /sys/devices/system/cpu/*/cpufreq/; do echo 1700000 | sudo tee $x/scaling_max_freq; done`
@@ -10,7 +11,7 @@ Version: 24.04.00
 
 ## Packages
 Minimum:  
-`idle geany synaptic net-tools audacious mtpaint gnome-disk-utility xournalpp pdfarranger`
+`idle geany geany-plugin-addons synaptic net-tools audacious mtpaint gnome-disk-utility xournalpp pdfarranger`
 
 Notes:
 
@@ -32,6 +33,9 @@ sudo apt install firefox-esr
 * uBlock Origin
 
 ### Documentation Tools
+* asciiflow
+    * <https://asciiflow.com/>
+    * Note: Do not use online services for sensitive data
 * Graphviz/graphviz-dot
     * For flow charts
     * `sudo apt install graphviz`
@@ -40,6 +44,7 @@ sudo apt install firefox-esr
     * Requires Graphviz
     * <https://www.doxygen.nl/index.html>
     * `sudo apt install doxygen`
+    * Call `doxygen` at location of configuration file `Doxyfile`
 * PlantUML
     * UML-based (text input, based on graphviz-dot)
     * For various diagram types like state diagrams, timing diagrams
@@ -92,8 +97,9 @@ sudo apt install firefox-esr
 
 ### Code Editor Tools
 * Geany
-    * `sudo apt install geany`
+    * `sudo apt install geany geany-plugin-addons`
     * <https://www.geany.org/download/releases> (Windows)
+    * Tools -> Plugin Manager: Enable `Addons` and activate option `Open URI`
 * Emacs
     * sudo apt install emacs
     * <https://www.gnu.org/software/emacs/download.html> (Windows)
@@ -119,7 +125,12 @@ winetricks msxml3
     * WiFI only, no USB, no Bluetooth
     * msxml3 or msxml4 or msxml6 (less warnings with 6 than with 4)
     * No advantage with playonlinux python3-pyasyncore
-    
+
+### VirtualBox
+* Installation via apt is broken as of Feb 2026
+* <https://bugs.launchpad.net/ubuntu/+source/virtualbox/+bug/2136499>
+    * Post 8 or Post 11 
+ 
 ### Download for Later Install
 * Location: /var/cache/apt/archives
 * For Download

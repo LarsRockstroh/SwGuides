@@ -1,6 +1,7 @@
 # Guide for Android Phone
-License: CC0-1.0 https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt
-Version: 01.00.00
+License: CC0-1.0 https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt  
+Repository: https://github.com/LarsRockstroh/SwGuides/  
+Version: 01.00.01
 ## Programs
 
 * F-Droid
@@ -17,8 +18,10 @@ Version: 01.00.00
 	* <https://github.com/termux/termux-app>
 	* Storage
 	    * Grant access to storage via Settings->Apps
-	    * /storage/emulated/0
-	* `pkg install python`
+	    * '/storage/emulated/0'
+	    * Setup links: 'termux-setup-storage`
+	* `pkg install python mc`
+	* `pkg install mc`
 * FairScan (Photos to PDF)
     * <https://f-droid.org/en/packages/org.fairscan.app>
     * <https://github.com/pynicolas/FairScan>
@@ -43,3 +46,10 @@ Version: 01.00.00
     * Google TV
     * Moto App Manager
 * Settings -> Apps -> Cloud media settings: None
+* Settipgs -> Display
+    * Adaptive brightness
+    * Auto-rotate screen
+* Settings -> Battery
+    * Battery percentage (in status bar): On
+    * Overcharge Protection
+    
