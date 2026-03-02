@@ -9,5 +9,5 @@ Versions of Guides:
 
 * [Guide_AndroidPhone.md](Guide_AndroidPhone.md): 01.00.01, 2026 Feb
 * [Guide_Lubuntu2404.md](Guide_Lubuntu2404.md): 24.04.01, 2026 Feb
-* [Guide_FPGA_VarA.md](Guide_FPGA_VarA/Guide_FPGA_VarA.md): 24.04.01, 2026 Feb
+* [Guide_FPGA_VarA.md](Guide_FPGA_VarA/Guide_FPGA_VarA.md): 24.04.02, 2026 Mar
 
