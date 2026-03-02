@@ -1,7 +1,7 @@
 # Guide_FPGA_VarA (VHDL-2008)
 License: CC0-1.0 https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt  
 Repository: https://github.com/LarsRockstroh/SwGuides/  
-Version: 24.04.01  
+Version: 24.04.02  
 
 Content:
 
@@ -40,6 +40,7 @@ Content:
 * In design files, do not initialize signals.
 * Put the reset if-clause to the end of the process.
 * Only one assignment per line.
+* Call `finish` at the end of simulation.
 
 ### Naming Conventions
 
