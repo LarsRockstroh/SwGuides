@@ -1,7 +1,7 @@
 # Guide for Lubuntu Install
 License: CC0-1.0 https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt  
 Repository: https://github.com/LarsRockstroh/SwGuides/  
-Version: 24.04.01
+Version: 24.04.02
 ## Startup
 * Limit CPU Speed  
     `for x in /sys/devices/system/cpu/*/cpufreq/; do echo 1700000 | sudo tee $x/scaling_max_freq; done`
@@ -151,8 +151,8 @@ winetricks msxml3
 * Optional panal background: 176,176,176 (HTML: #b0b0b0)
 * Fonts
     * DejaVu
-    * Size on 15" HD for DejaVu Sans Mono: 10 (Terminal, Text Editors, ...)
-    * Size on 15" FHD for DejaVu Sans Mono: 14 (Terminal, Text Editors, ...)  
+    * Size on 15" HD for DejaVu Sans Mono or Liberation Mono: 10 (Terminal, Text Editors, ...)
+    * Size on 15" FHD for DejaVu Sans Mono or Liberation Mono: 14 (Terminal, Text Editors, ...)  
 * LXQT Apperance Configuration
     * Widget Style -> QT Style Breeze
     * Icons Theme -> Humanity (Smooth modern theme)
@@ -169,8 +169,8 @@ winetricks msxml3
     * Placement -> Position: Right of desktop (For 15" FHD)
     * Styling -> Background color: 176,176,176 (HTML: #b0b0b0) (Optional)
     * Widgets -> Remove elements as needed
-    * Widgets -> Clock: Time: Custom, Show seconds, pad hour wih zero
-    * Widgets -> Clock: Date: Below, Custom, Show year
+    * Widgets -> Task Manager: Maximum button height: 30 px
+    * Widgets -> Clock: `'<font size="+1">'HH:mm:ss'<br/>'ddd, d MMM yyyy'</font>'`
 
 ### Tiling Windows
 Steps:
